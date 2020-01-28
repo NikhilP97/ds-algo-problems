@@ -74,10 +74,11 @@
  * 
  * My Code:
  * 
- * Time Complexity: O(n) where n is the number of socks
- * Space ComplexityL: O(m) where m is the number of unique colored socks
+ * Time Complexity: O(n) where n is the number of socks.
+ * Space Complexity: O(m) where m is the number of unique colored socks.
  * 
  */
+
 
 import java.util.*;
 
