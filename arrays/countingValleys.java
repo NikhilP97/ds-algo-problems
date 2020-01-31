@@ -64,6 +64,21 @@
  * Time Complexity: O(n) where n is the number of steps covered.
  * Space Complexity: O(1) since it does not depend on the number of steps.
  * 
+ * Method:
+ * Track the current height/altitude of the hiker
+ * Get the next height based on the type of step he takes
+ * If he is at ground level & takes a step below, means he is entering a valley so make a boolean true
+ * noting he has entered a valley
+ * If he is one step below ground level & takes a step up, means he has climbed up from a valley. Make a
+ * boolean true noting he has crossed the valley.
+ * If both are true, increment the no of valleys crossed.
+ * reset the booleans, and do the same for the rest of the steps.
+ * 
+ * Note:
+ * We actually do not need to track an entry or exit as the problem statement mentions that he always finishes
+ * he trek at ground level. So we can increment our counter each time he enters.
+ * PS - This was the solution in the editorial
+ * 
  */
 
 
