@@ -56,6 +56,19 @@
  * 
  */
 
+/**
+ * My Code:
+ * 
+ * Time Complexity: O(n) where n is the length of the string provided
+ * Space Complexity: O(1) since it does not depend on the size of the string.
+ * 
+ * Method:
+ * First count the total number of letter 'a' in the given string
+ * Then find how many whole strings fit into the infinte string upto the first N letters.
+ * If the first N letters do not perfectly fit into the repeated string,
+ * find how many letter 'a' are there in the remaining part of the last sub string. 
+ */
+
 
 public class repeatedString {
 
