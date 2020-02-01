@@ -64,6 +64,11 @@ A Node is defined as:
 
 public class detectCycleLL {
 
+    public class Node {
+        int data;
+        Node next;
+    }
+
     public boolean hasCycle(Node head) {
         if (head == null) {
             return false;
