@@ -60,7 +60,7 @@
  * My Code:
  * 
  * Time Complexity: O(n^2) (worst case) where n is the size of the array.
- * Space Complexity: O(n) as we create a new array of the original size for rotating.
+ * Space Complexity: O(1) as it does not depend on the array size.
  * 
  * Approach:
  * Initally I was thinking of all sorting algorithms & was concetrating on sorting the array.
