@@ -78,7 +78,11 @@ import java.util.*;
 
 public class sherlockValidString {
 
-    // Complete the isValid function below.
+    /**
+     * Returns a string stating if the given string is valid according to the given conditions
+     * @param inputStr The input string
+     * @return "YES" if valid, "NO" if not valid
+     */
     static String isValid(String inputStr) {
         HashMap<String, Integer> occurences = new HashMap<String, Integer>();
         HashMap<Integer, Integer> freqMap = new HashMap<Integer, Integer>();
