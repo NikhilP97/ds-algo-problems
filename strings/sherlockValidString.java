@@ -69,6 +69,7 @@
  * I kept a track of the max number of times a letter occurred & correspondingly the frequency of this occurrence
  * I kept a track of the minimum as well.
  * Finally I used this data & plugged it into the above conditions.
+ * 
  * If any condition matched, it was a valid string.
  * If if didn't, it wasn't a valid string.
  */
