@@ -26,22 +26,17 @@ public class copySherlockValidString {
             String letter = Character.toString(inputStr.charAt(i));
             if (occurences.containsKey(letter)) {
                 frequency = occurences.get(letter);
-                if (frequency == minFreqLetter) {
-                    noOfMinFreq -= 1;
-                }
                 int currFreq = freqMap.get(frequency);
                 currFreq--;
-                freqMap.put(frequency, currFreq);
-                frequency += 1;
-                if (noOfMinFreq == 0) {
-                    freqMap.remove(frequency-1);
-                    minFreqLetter = frequency;
-                    if (freqMap.containsKey(frequency)) {
-                        noOfMinFreq = freqMap.get(frequency);
-                    } else {
-                        noOfMinFreq = 1;
+                if (currFreq == 0) {
+                    if (minFreqLetter == frequency) {
+                        minFreqLetter = frequency + 1;
                     }
+                    freqMap.remove(frequency);
+                } else {
+                    freqMap.put(frequency, currFreq);
                 }
+                frequency += 1;
                 occurences.put(letter, frequency);
             } else {
                 frequency = 1;
@@ -55,20 +50,11 @@ public class copySherlockValidString {
             } else {
                 freqMap.put(frequency, 1);
             }
-
-            if (frequency == maxFreqLetter) {
-                noOfMaxFreq += 1;
-            }
-            if (frequency == minFreqLetter) {
-                noOfMinFreq += 1;
-            }
             if (frequency > maxFreqLetter) {
                 maxFreqLetter = frequency;
-                noOfMaxFreq = 1;
             }
             if (frequency < minFreqLetter) {
                 minFreqLetter = frequency;
-                noOfMinFreq = 1;
             }
         }
         noOfMaxFreq = freqMap.get(maxFreqLetter);
@@ -121,5 +107,6 @@ public class copySherlockValidString {
         String result = isValid(fileAsString);
 
         System.out.println("result: "+result);
+        buf.close();
     }
 }
