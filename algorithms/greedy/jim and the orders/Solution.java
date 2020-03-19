@@ -12,6 +12,9 @@
  * primitive data types won't work for our case. Hence I've used an inner class Order that stores the sum as
  * well as the customer number. I then create an Order object for each entry and then sort it using the collections
  * sort by overriding the comparable interface.
+ * 
+ * Note: I have changed the signature of jimOrders() from int[] to List<Order> because there was no point converting
+ * the list to an integer array as it will be printed in the main() function.
  */
 
 import java.util.*;
