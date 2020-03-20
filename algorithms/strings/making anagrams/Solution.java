@@ -36,10 +36,8 @@ public class Solution {
         }
         int noOfDeletions = 0;
         for (int i = 0; i < s1Freq.length; i++) {
-            if (s1Freq[i] != s2Freq[i]) {
-                int extraChars = Math.abs(s1Freq[i] - s2Freq[i]);
-                noOfDeletions+=extraChars;
-            }
+            int extraChars = Math.abs(s1Freq[i] - s2Freq[i]);
+            noOfDeletions+=extraChars;
         }
         return noOfDeletions;
     }
