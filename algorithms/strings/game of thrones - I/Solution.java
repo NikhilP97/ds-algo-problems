@@ -40,7 +40,6 @@ public class Solution {
         }
         if (noOfOddChars > 1) return "NO";
         return "YES";
-
     }
 
     public static void main(String[] args) {
