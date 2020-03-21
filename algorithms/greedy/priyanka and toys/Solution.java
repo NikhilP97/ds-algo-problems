@@ -3,7 +3,7 @@
  * Java 8
  * Problem on HackerRank - https://www.hackerrank.com/challenges/priyanka-and-toys/problem
  * 
- * Time Complexity: O(n) since we need to iterate over each value to map the visited array
+ * Time Complexity: O(n) since we need to iterate over each value to map the visited array.
  * Space Complexity: O(1) since the visited array size does not vary on the number of orders.
  * 
  * Approach:
