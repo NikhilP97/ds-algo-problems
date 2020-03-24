@@ -19,7 +19,7 @@
 
 import java.util.*;
 
-public class missingNumbersProblem {
+public class Solution {
 
     /**
      * Returns the missing numbers in arr which
