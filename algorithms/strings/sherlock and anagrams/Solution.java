@@ -1,7 +1,6 @@
 /**
  * Sherlock and Anagrams
  * Java 8
- * 
  * Problem on HackerRank - https://www.hackerrank.com/challenges/sherlock-and-anagrams/problem
  * 
  * Time Complexity: O(s^3) where s is the size of the input string. The time complexity is O(s^3) since
