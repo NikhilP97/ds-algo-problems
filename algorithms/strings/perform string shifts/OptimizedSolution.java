@@ -1,3 +1,21 @@
+/**
+ * Perform String Shifts
+ * Java 8
+ * Problem on LeetCode - https://leetcode.com/explore/challenge/card/30-day-leetcoding-challenge/529/week-2/3299
+ * This is problem is part of 30 day code challenge for April 2020.
+ * 
+ * Time Complexity: O(n) where n is the number of operations.
+ * Space Complexity: O(s) where s is the size of the input string.
+ * 
+ * Approach:
+ * Instead of rotating the string at every operation, we calculate the total number of left shift
+ * operations and right shift operations. Since left operations cancel right operations and vice
+ * versa, we take the difference left - right. If left > right that means we need to shift the string
+ * left by (left-right) otherwise if right > left, shift right by the difference.
+ * 
+ * Note: My original approach can be found in Solution.java
+ */
+
 class OptimizedSolution {
     
     private String leftRotate(String str, int d) {
