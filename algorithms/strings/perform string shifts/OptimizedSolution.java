@@ -2,7 +2,7 @@
  * Perform String Shifts
  * Java 8
  * Problem on LeetCode - https://leetcode.com/explore/challenge/card/30-day-leetcoding-challenge/529/week-2/3299
- * This is problem is part of 30 day code challenge for April 2020.
+ * This problem is part of 30 day code challenge for April 2020.
  * 
  * Time Complexity: O(n) where n is the number of operations.
  * Space Complexity: O(s) where s is the size of the input string.
